@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.verma.zappos_project.ListAllProductsFragments">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:weightSum="1" >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:id="@+id/editText_key"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/imageButton_search"
+                android:layout_weight="0.99" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton_search"
+                android:layout_alignTop="@+id/editText_key"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_search_category_default"
+                android:layout_alignBottom="@+id/editText_key" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="446dp"
+            android:layout_gravity="right|top" >
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecyclerView_list"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText_key" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

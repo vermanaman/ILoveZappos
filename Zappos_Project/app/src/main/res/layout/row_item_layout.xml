@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+      android:id="@+id/cardViewProduct"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="3dp"
+      android:visibility="visible"
+      app:cardCornerRadius="5dp">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/root">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Text"
+              android:id="@+id/textView_productname1"
+              android:layout_marginTop="30dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center_horizontal" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Text"
+              android:id="@+id/textView_brandname1"
+              android:layout_below="@+id/textView_productname1"
+              android:layout_alignStart="@+id/textView_productname1"
+              android:layout_marginTop="28dp"
+              android:layout_gravity="center_horizontal" />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/imageView_productimage"
+              android:layout_gravity="center_horizontal" />
+<!--
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Text"
+              android:id="@+id/textView_originalprice"
+              android:layout_marginTop="27dp"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/textView_brandname"
+              android:layout_gravity="center_horizontal" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Text"
+              android:id="@+id/textView_discount"
+              android:layout_below="@+id/textView_originalprice"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="center_horizontal" />-->
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="New Text"
+              android:id="@+id/textView_price"
+              android:layout_below="@+id/textView_discount1"
+              android:layout_alignStart="@+id/textView_originalprice1"
+              android:layout_gravity="center_horizontal" />
+      </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
